@@ -35,6 +35,7 @@
 Касса отправляет в чеке **код**, а не название из вашей номенклатуры.
 
 ```mermaid
+%%{init: {'theme':'base','themeVariables':{'fontFamily':'ui-sans-serif,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif','fontSize':'15px','primaryColor':'#4338ca','primaryTextColor':'#ffffff','primaryBorderColor':'#c7d2fe','secondaryColor':'#6d28d9','tertiaryColor':'#312e81','lineColor':'#c7d2fe','textColor':'#ffffff','mainBkg':'#4338ca','nodeBorder':'#c7d2fe','nodeTextColor':'#ffffff','edgeLabelBackground':'#1e1b4b','attributeBackgroundColorOdd':'#4338ca','attributeBackgroundColorEven':'#4f46e5','noteBkgColor':'#fbbf24','noteTextColor':'#1a1a1a','noteBorderColor':'#b45309','clusterBkg':'#1e1b4b','clusterBorder':'#c7d2fe','labelBoxBkgColor':'#4338ca','labelBoxBorderColor':'#c7d2fe','labelTextColor':'#ffffff','actorBkg':'#4338ca','actorBorder':'#c7d2fe','actorTextColor':'#ffffff','actorLineColor':'#c7d2fe','signalColor':'#c7d2fe','signalTextColor':'#ffffff','sequenceNumberColor':'#1a1a1a','activationBkgColor':'#6d28d9','activationBorderColor':'#c7d2fe','transitionColor':'#c7d2fe','transitionLabelColor':'#ffffff','stateBkg':'#4338ca','stateLabelColor':'#ffffff','altBackground':'#312e81','compositeBackground':'#1e1b4b','compositeBorder':'#c7d2fe','compositeTitleBackground':'#312e81','specialStateColor':'#c7d2fe','innerEndBackground':'#c7d2fe','cScale0':'#4338ca'}}}%%
 flowchart LR
     P[Позиция в вашем учёте<br/>«Самса с мясом»] --> C[Каталог tasnif.soliq.uz<br/>поиск подходящего кода]
     C --> K[ИКПУ<br/>привязан к позиции]
@@ -89,6 +90,7 @@ flowchart LR
 за вас, выступая **комиссионером**. Но работает это только после регистрации.
 
 ```mermaid
+%%{init: {'theme':'base','themeVariables':{'fontFamily':'ui-sans-serif,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif','fontSize':'15px','primaryColor':'#4338ca','primaryTextColor':'#ffffff','primaryBorderColor':'#c7d2fe','secondaryColor':'#6d28d9','tertiaryColor':'#312e81','lineColor':'#c7d2fe','textColor':'#ffffff','mainBkg':'#4338ca','nodeBorder':'#c7d2fe','nodeTextColor':'#ffffff','edgeLabelBackground':'#1e1b4b','attributeBackgroundColorOdd':'#4338ca','attributeBackgroundColorEven':'#4f46e5','noteBkgColor':'#fbbf24','noteTextColor':'#1a1a1a','noteBorderColor':'#b45309','clusterBkg':'#1e1b4b','clusterBorder':'#c7d2fe','labelBoxBkgColor':'#4338ca','labelBoxBorderColor':'#c7d2fe','labelTextColor':'#ffffff','actorBkg':'#4338ca','actorBorder':'#c7d2fe','actorTextColor':'#ffffff','actorLineColor':'#c7d2fe','signalColor':'#c7d2fe','signalTextColor':'#ffffff','sequenceNumberColor':'#1a1a1a','activationBkgColor':'#6d28d9','activationBorderColor':'#c7d2fe','transitionColor':'#c7d2fe','transitionLabelColor':'#ffffff','stateBkg':'#4338ca','stateLabelColor':'#ffffff','altBackground':'#312e81','compositeBackground':'#1e1b4b','compositeBorder':'#c7d2fe','compositeTitleBackground':'#312e81','specialStateColor':'#c7d2fe','innerEndBackground':'#c7d2fe','cScale0':'#4338ca'}}}%%
 sequenceDiagram
     participant B as Покупатель
     participant PS as Платёжная система
@@ -124,6 +126,7 @@ sequenceDiagram
 подписывает своей ЭЦП.
 
 ```mermaid
+%%{init: {'theme':'base','themeVariables':{'fontFamily':'ui-sans-serif,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif','fontSize':'15px','primaryColor':'#4338ca','primaryTextColor':'#ffffff','primaryBorderColor':'#c7d2fe','secondaryColor':'#6d28d9','tertiaryColor':'#312e81','lineColor':'#c7d2fe','textColor':'#ffffff','mainBkg':'#4338ca','nodeBorder':'#c7d2fe','nodeTextColor':'#ffffff','edgeLabelBackground':'#1e1b4b','attributeBackgroundColorOdd':'#4338ca','attributeBackgroundColorEven':'#4f46e5','noteBkgColor':'#fbbf24','noteTextColor':'#1a1a1a','noteBorderColor':'#b45309','clusterBkg':'#1e1b4b','clusterBorder':'#c7d2fe','labelBoxBkgColor':'#4338ca','labelBoxBorderColor':'#c7d2fe','labelTextColor':'#ffffff','actorBkg':'#4338ca','actorBorder':'#c7d2fe','actorTextColor':'#ffffff','actorLineColor':'#c7d2fe','signalColor':'#c7d2fe','signalTextColor':'#ffffff','sequenceNumberColor':'#1a1a1a','activationBkgColor':'#6d28d9','activationBorderColor':'#c7d2fe','transitionColor':'#c7d2fe','transitionLabelColor':'#ffffff','stateBkg':'#4338ca','stateLabelColor':'#ffffff','altBackground':'#312e81','compositeBackground':'#1e1b4b','compositeBorder':'#c7d2fe','compositeTitleBackground':'#312e81','specialStateColor':'#c7d2fe','innerEndBackground':'#c7d2fe','cScale0':'#4338ca'}}}%%
 stateDiagram-v2
     [*] --> Черновик
     Черновик --> Подписан: ЭЦП продавца
